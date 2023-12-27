@@ -19,7 +19,8 @@ def calculate_platforms(weights: list[int], limit: int) -> int:
     return platforms
 
 
-weights_list: list = [int(elem) for elem in input().split()]
-limit: int = int(input())
+if __name__ == '__main__':
+    weights_list: list = [int(elem) for elem in input().split()]
+    limit: int = int(input())
 
-print(calculate_platforms(weights_list, limit))
+    print(calculate_platforms(weights_list, limit))
